@@ -19,12 +19,4 @@ export class UserService {
     return of(USERS.find(user => user.id === id));
   }
 
-  getUsersByName(name: string): Observable<User[]> {
-    return of(USERS.filter(user => user.name === name));
-  }
-
-  getUsersBySurname(surname: string): Observable<User[]> {
-    return of(USERS.filter(user => user.surname === surname));
-  }
-
 }
